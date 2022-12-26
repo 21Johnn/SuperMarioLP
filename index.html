@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario o filme | Em breve nos cinemas</title>
+
+    <link rel="stylesheet" href="dist/css/main.css">
+
+    <!-- bs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero__container">
+            <img src="dist/images/image__Hero.png" alt="">
+            <div class="hero__form">
+
+                <form>
+                    <h2>ENCONTRE UM CINEMA PRÓXIMO DE VOCÊ</h2>
+                    <label for="city">Digite sua cidade:</label>
+                    <input type="text" id="city">
+
+                    <label for="state">Selecione seu estado</label>
+                    <select name="state" id="state">
+                        <option value=""></option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="characters">
+        <h2>PERSONAGENS</h2>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-inner">
+                    <div class="carousel-item active characters__image">
+                        <div class="character__description d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="dist/images/supermario.png" class="w-100" alt="supermario">
+                            </div>
+                            <div class="ms-5">
+                                <h3>Mario</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam saepe veritatis ipsam
+                                    molestias placeat dolores!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item characters__image">
+                        <div class="character__description d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="dist/images/Luigi-PNG-Pic.png" class="w-100" alt="supermario">
+                            </div>
+                            <div class="ms-5">
+                                <h3>Mario</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam saepe veritatis ipsam
+                                    molestias placeat dolores!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item characters__image">
+                        <div class="character__description d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="dist/images/princesspeach.png" class="w-100" alt="supermario">
+                            </div>
+                            <div class="ms-5">
+                                <h3>Mario</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam saepe veritatis ipsam
+                                    molestias placeat dolores!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item characters__image">
+                        <div class="character__description d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="dist/images/toad.png" class="w-100" alt="supermario">
+                            </div>
+                            <div class="ms-5">
+                                <h3>Mario</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam saepe veritatis ipsam
+                                    molestias placeat dolores!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item characters__image">
+                        <div class="character__description d-flex justify-content-center align-items-center">
+                            <div>
+                                <img src="dist/images/Bowser-Super-Mario-Free-PNG.png" class="w-100" alt="supermario">
+                            </div>
+                            <div class="ms-5">
+                                <h3>Mario</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam saepe veritatis ipsam
+                                    molestias placeat dolores!</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+
+    <section class="casting">
+        <div class="casting__container">
+            <h2>ELENCO</h2>
+
+            <ul class="casting__list">
+                <li class="casting__list__item">
+                    <img src="dist/images/ChrissPatt-Mario.jpg" alt="">
+                    <h3>Chris Patt</h3>
+                    <h2>Mario</h2>
+                </li>
+                <li class="casting__list__item">
+                    <img src="dist/images/charlie day-luigi.jpg" alt="">
+                    <h3>Charlie Day</h3>
+                    <h2>Luigi</h2>
+                </li>
+                <li class="casting__list__item">
+                    <img src="dist/images/anya taylor-joy-princess-peach.jpg" alt="">
+                    <h3>Anya taylor Joy</h3>
+                    <h2>Princess Peach</h2>
+                </li>
+                <li class="casting__list__item">
+                    <img src="dist/images/jack-black-browser.jpg" alt="">
+                    <h3>jack Black</h3>
+                    <h2>Bouwser</h2>
+                </li>
+                <li class="casting__list__item">
+                    <img src="dist/images/seth rogen-donkey kong.jpg" alt="">
+                    <h3>Seth rogen</h3>
+                    <h2>Donkey kong</h2>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+    "></script>
+</body>
+
+</html>

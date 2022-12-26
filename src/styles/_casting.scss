@@ -1,0 +1,25 @@
+.casting{   
+
+    &__container{
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        &__item{
+            text-align: center;
+
+            img{
+                aspect-ratio: auto;
+                height: 300px;
+            }
+
+        }
+    }
+}
