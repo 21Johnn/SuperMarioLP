@@ -1,8 +1,30 @@
 
 .characters{
     max-width: 1440px;
+    max-height: 500px;
     width: 100%;
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #4BC2F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+
+    h2{
+        margin-bottom: 25px;
+    }
+
+    .carousel-indicators{
+        margin-bottom: -1rem;
+    }
+
+    .carousel{
+        max-width: 1000px;
+        width: 100%;
+    }
 
 
     &__image{
@@ -17,7 +39,26 @@
     }
 
     &__description{
-        max-width: 250px;
+        max-width: 500px;
         width: 100%;
     }
+}
+
+.run{
+    height: 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    img{
+        height: 80px;
+        animation-name: run;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes run {
+    0%   {padding-left: 0;}
+    50% {padding-left: 100%;}
+    100% {padding-left: 0;}
 }

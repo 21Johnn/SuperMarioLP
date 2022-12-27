@@ -1,0 +1,28 @@
+.sinopse{
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 0 auto;
+
+        img{
+            max-width: 45%;
+            width: 100%;
+
+            transition: transform .3s ease-in;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+        }
+
+        div{
+            padding-top: 60px;
+        }
+
+        .gif{
+            width: 80px;
+        }
+}
