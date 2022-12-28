@@ -1,0 +1,36 @@
+.frame{
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    &__container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        &__video{
+        }
+
+        &__close{
+
+            i{
+                color: white;
+                font-size: 32px;
+                position: fixed;
+                top: 50px;
+                left: 90vw;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.hidden{
+    display: none;
+}

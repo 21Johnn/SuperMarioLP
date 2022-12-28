@@ -1,4 +1,7 @@
 .sinopse{
+    background-color: #C93535;
+
+        &__container{
         max-width: 1440px;
         width: 100%;
         display: flex;
@@ -6,6 +9,8 @@
         align-items: center;
         gap: 50px;
         margin: 0 auto;
+        padding-bottom: 50px;
+        }
 
         img{
             max-width: 45%;

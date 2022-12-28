@@ -1,25 +1,91 @@
 @use 'characters';
 @use 'casting';
 @use 'sinopse';
+@use 'random';
+@use 'variaveis';
+@use 'frame';
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@100;400;700&display=swap');
 
 *{
     box-sizing: border-box;
     padding: 0;
     margin:0;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 body{
-    background-color: #BBDEEE !important;
+    background-color: variaveis.$bgColor !important;
+}
+
+header{
+    -webkit-box-shadow: 0px 2px 39px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 39px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 39px -3px rgba(0,0,0,0.75);
+    background-color: #c93535;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        
+
+        img{
+            max-width: 80px;
+            width: 100%;
+        }
+
+        ul{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 0;
+
+            li{
+
+                a{
+                    text-decoration: none;
+                    padding: 10px;
+                    font-weight: 700;
+                }
+
+                .btn--one{
+                    border: 1px solid #FFB729;
+                    color: #FFB729;
+                    padding: 7px;
+
+                    &:hover{
+                        border: 1px solid #e0e0e0;
+                        color: #e0e0e0;
+                    }
+                }
+
+                .btn--two{
+                    background-color: variaveis.$buttonColor;
+                    color: #e0e0e0;
+                    transition: background-color .3s ease-in;
+
+                    &:hover{
+                        background-color: #f7f7f7;
+                        color: #FFB729;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .hero{
     height: 90vh;
     max-width: 100vw;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(6, 6, 7, 0.52), rgba(16, 37, 68, 0.479)), url('../../dist/images/bg__image.jpg');   
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: variaveis.$bgSecondaryColor;
 
     &__container{
         max-width: 1440px;
@@ -28,12 +94,13 @@ body{
         justify-content: center;
         align-items: center;
         gap: 100px;
-        padding-top: 25vh;
-        margin: 0 auto;
+        padding-top: 15vh;
+        margin: auto;
         
 
         img{
-            max-width: 500px;
+            max-width: 750px;
+            filter: drop-shadow(-55px 68px 104px  rgba(0,0,0,0.51)); 
         }
 
         form{
@@ -45,7 +112,6 @@ body{
             width: 100%;
 
             h2{
-                color: white;
                 text-align: center;
                 max-width: 600px;
                 width: 100%;
@@ -55,18 +121,23 @@ body{
             input, label, select{
                 max-width: 350px;
                 width: 100%;
+                color: variaveis.$mainTextColor;
             }
 
             input, select{
                 padding: 8px;
-                margin-top: 8px;
                 margin-bottom: 8px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid variaveis.$buttonColor;
+                color: variaveis.$buttonColor;
+                outline: none;
             }
 
             label{
                 font-size: 24px;
-                color: white;
             }
+
         }
 
     }
@@ -82,7 +153,71 @@ body{
         width: 150px;
     }
 
-    span{
-        color: white;
+}
+
+.btn__primary{
+    padding: 8px 16px;
+    width: 350px;
+    background-color: variaveis.$buttonColor;
+    border: none;
+    color: white;
+    margin-top: 8px;
+    font-weight: 700;
+
+    &:hover{
+        background-color: #f7f7f7;
+        color: #FFB729;
+
     }
+}
+
+.trailer{
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-image: url('../images/pattern-logos-characters-bd1f26898b2027c98ce8ba17c084f523.png'), linear-gradient(223deg,#FFB729,#D74041);
+
+
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        height: 80px;
+    }
+
+    p{
+        margin: 0;
+    }
+}
+
+.title{
+    font-size: 24px;
+    color: variaveis.$mainTextColor;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+.title--big{
+    font-size: 42px;
+    color: variaveis.$mainTextColor;
+    margin-bottom: 8px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+.title--small{
+    font-size: 16px;
+    color: variaveis.$whiteText;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+.text{
+    font-size: 16px;
+    color: variaveis.$whiteText;
 }

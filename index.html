@@ -11,10 +11,30 @@
 
     <!-- bs -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 </head>
 
 <body>
+
+    <header>
+        <nav>
+            <h1>
+                <img src="dist/images/logomario.png" alt="supermario o filme">
+            </h1>
+            
+            <div>
+                <ul>
+                    <li>
+                        <a href="" class="btn--one">EXEMPLO</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn--two">INGRESSOS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <section class="hero">
         <div class="hero__container">
@@ -22,7 +42,7 @@
             <div class="hero__form">
 
                 <form>
-                    <h2>ENCONTRE UM CINEMA PRÓXIMO DE VOCÊ</h2>
+                    <h2 class="title--big">ENCONTRE UM CINEMA PRÓXIMO DE VOCÊ</h2>
                     <label for="city">Digite sua cidade:</label>
                     <input type="text" id="city">
 
@@ -58,11 +78,12 @@
                         <option value="TO">Tocantins</option>
                         <option value="EX">Estrangeiro</option>
                     </select>
+                    <button class="btn__primary">PROCURAR</button>
                 </form>
 
                 <div>
                     <ul class="cinemas">
-                        <span>Realização:</span>
+                        <span class="text">Realização:</span>
                         <li><img src="dist/images/cinemark-logo-5.png" alt="cinemark"></li>
                         <li><img src="dist/images/cinepolis-logo-2.png" alt="cinemark"></li>
                     </ul>
@@ -71,7 +92,7 @@
         </div>
     </section>
     <section class="characters">
-        <h2>PERSONAGENS</h2>
+        <h2 class="title--big">PERSONAGENS</h2>
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -93,8 +114,8 @@
                                 <img src="dist/images/supermario.png" class="w-100" alt="supermario">
                             </div>
                             <div class="ms-5 characters__description">
-                                <h3>Mario</h3>
-                                <p>Mario é retratado como um encanador corpulento que vive na terra fictícia do Reino do Cogumelo com Luigi, seu irmão mais novo e mais alto. Na série de televisão e no filme, Mario e Luigi são originalmente de Brooklyn, Nova York.</p>
+                                <h3 class="title">Mario</h3>
+                                <p class="text">Mario é retratado como um encanador corpulento que vive na terra fictícia do Reino do Cogumelo com Luigi, seu irmão mais novo e mais alto. Na série de televisão e no filme, Mario e Luigi são originalmente de Brooklyn, Nova York.</p>
                             </div>
                         </div>
                     </div>
@@ -105,8 +126,8 @@
                                 <img src="dist/images/Luigi-PNG-Pic.png" class="w-100" alt="supermario">
                             </div>
                             <div class="ms-5 characters__description">
-                                <h3>Luigi</h3>
-                                <p>Luigi (ルイージ Ruīji) é um personagem fictício de videogames produzido pela Nintendo. Criado pelo designer de jogos Shigeru Miyamoto, Luigi é irmão do Mario e é um dos mascotes da série, ele é o seu companheiro em vários jogos. Yōichi Kotabe (Série Super Mario Bros.) A primeira aparição de Luigi se deu no jogo Mario Bros.</p>
+                                <h3 class="title">Luigi</h3>
+                                <p class="text">Luigi (ルイージ Ruīji) é um personagem fictício de videogames produzido pela Nintendo. Criado pelo designer de jogos Shigeru Miyamoto, Luigi é irmão do Mario e é um dos mascotes da série, ele é o seu companheiro em vários jogos. Yōichi Kotabe (Série Super Mario Bros.) A primeira aparição de Luigi se deu no jogo Mario Bros.</p>
                             </div>
                         </div>
                     </div>
@@ -117,8 +138,8 @@
                                 <img src="dist/images/princesspeach.png" class="w-100" alt="supermario">
                             </div>
                             <div class="ms-5 characters__description">
-                                <h3>Princesa Peach</h3>
-                                <p>A Princesa Peach Cogumelo (ピーチ姫 Pīchi-hime) é uma personagem fictícia da série de videogames Super Mario Bros., produzido pela Nintendo. Ela é a princesa do também fictício Reino dos Cogumelos e por diversas vezes faz o papel de donzela em apuros da série, sendo constantemente salva por Mario, a quem ela é apaixonada.</p>
+                                <h3 class="title">Princesa Peach</h3>
+                                <p class="text">A Princesa Peach Cogumelo (ピーチ姫 Pīchi-hime) é uma personagem fictícia da série de videogames Super Mario Bros., produzido pela Nintendo. Ela é a princesa do também fictício Reino dos Cogumelos e por diversas vezes faz o papel de donzela em apuros da série, sendo constantemente salva por Mario, a quem ela é apaixonada.</p>
                             </div>
                         </div>
                     </div>
@@ -129,8 +150,8 @@
                                 <img src="dist/images/toad.png" class="w-100" alt="supermario">
                             </div>
                             <div class="ms-5 characters__description">
-                                <h3>Toad</h3>
-                                <p>Do Fabricante Toad é um personagem que é assistente da Princesa Peach e um protetor de longa data do Reino dos Coguos. Ele é na verdade um personagem singular entre uma espécie inteira de sósias (assim como Yoshi é para a espécie Yoshi).</p>
+                                <h3 class="title">Toad</h3>
+                                <p class="text">Do Fabricante Toad é um personagem que é assistente da Princesa Peach e um protetor de longa data do Reino dos Coguos. Ele é na verdade um personagem singular entre uma espécie inteira de sósias (assim como Yoshi é para a espécie Yoshi).</p>
                             </div>
                         </div>
                     </div>
@@ -141,8 +162,8 @@
                                 <img src="dist/images/Bowser-Super-Mario-Free-PNG.png" class="w-100" alt="supermario">
                             </div>
                             <div class="ms-5 characters__description">
-                                <h3>Bowser</h3>
-                                <p>Ele é o rei de todos os Koopas (uma espécie similar a tartarugas super desenvolvidas) e também o líder da organização criminosa conhecida como Koopa Troop, uma organização composta por diversas criaturas do Reino dos Koopas. Geralmente, Koopa rapta a Princesa Peach, e o Mario corre para salvá-la.</p>
+                                <h3 class="title">Bowser</h3>
+                                <p class="text">Ele é o rei de todos os Koopas (uma espécie similar a tartarugas super desenvolvidas) e também o líder da organização criminosa conhecida como Koopa Troop, uma organização composta por diversas criaturas do Reino dos Koopas. Geralmente, Koopa rapta a Princesa Peach, e o Mario corre para salvá-la.</p>
                             </div>
                         </div>
                     </div>
@@ -168,53 +189,103 @@
 
     <section class="casting">
         <div class="casting__container">
-            <h2>ELENCO</h2>
+            <h2 class="title--big">ELENCO</h2>
 
             <ul class="casting__list">
                 <li class="casting__list__item">
                     <img src="dist/images/ChrissPatt-Mario.jpg" alt="">
-                    <h3>Chris Patt</h3>
-                    <h2>Mario</h2>
+                    <h3 class="title">Chris Patt</h3>
+                    <h2 class="title--big">Mario</h2>
                 </li>
                 <li class="casting__list__item">
                     <img src="dist/images/charlie day-luigi.jpg" alt="">
-                    <h3>Charlie Day</h3>
-                    <h2>Luigi</h2>
+                    <h3 class="title">Charlie Day</h3>
+                    <h2 class="title--big">Luigi</h2>
                 </li>
                 <li class="casting__list__item">
                     <img src="dist/images/anya-taylor-joy-princess-peach.jpg" alt="">
-                    <h3>Anya taylor Joy</h3>
-                    <h2>Princess Peach</h2>
+                    <h3 class="title">Anya taylor Joy</h3>
+                    <h2 class="title--big">Princess Peach</h2>
                 </li>
                 <li class="casting__list__item">
                     <img src="dist/images/jack-black-browser.jpg" alt="">
-                    <h3>jack Black</h3>
-                    <h2>Bouwser</h2>
+                    <h3 class="title">jack Black</h3>
+                    <h2 class="title--big">Bouwser</h2>
                 </li>
                 <li class="casting__list__item">
                     <img src="dist/images/seth-rogen-donkey-kong.jpg" alt="">
-                    <h3>Seth rogen</h3>
-                    <h2>Donkey kong</h2>
+                    <h3 class="title">Seth rogen</h3>
+                    <h2 class="title--big">Donkey kong</h2>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section class="sinopse">
-        <img src="dist/images/capas.png" alt="">
-        <div>
-            <h2>SINOPSE</h2>
-            <p>Mario é um filme baseado na série de video games, Super Mario Bros, da Nintendo. Em Super Mario Bros. - O Filme, Mario (Chris Pratt) é um encanador qualquer no bairro de Brooklyn junto com seu irmão Luigi (Charlie Day). Um dia, Mario e Luigi vão para no reino dos cogumelos, governado pela Princesa Peach (Anya Taylor-Joy), mas ameaçado pelo rei dos Koopas, Bowser (Jack Black), que vai fazer de tudo para conseguir reinar todos os lugares. É então quando Luigi é raptado por Bowser e o usa para procurar Mario, o único capaz de deter o Koopa e reestabelexcer a paz. Mario terá que aprender como viver nesse novo reino perigoso, passando por vários biomas, aprender a dirigir carros, utilizar itens que o fazem soltar bolas de fogo das mãos, virar um animal e andar em plataformas nada confiáveis. Também estará acompanhados de amigos, como Toad (Keegan-Michael Key) e Donkey Kong (Seth Rogan).</p>
-        </div>
-        <img src="dist/images/tuboplanta.gif" alt="" class="gif">
+    <div class="sinopse">
+        <section class="sinopse__container">
+            <img src="dist/images/capas.png" alt="">
+            <div>
+                <h2 class="title--big">SINOPSE</h2>
+                <p class="text">Mario é um filme baseado na série de video games, Super Mario Bros, da Nintendo. Em Super Mario Bros. - 
+                    O Filme, Mario (Chris Pratt) é um encanador qualquer no bairro de Brooklyn junto com seu irmão Luigi 
+                    (Charlie Day). Um dia, Mario e Luigi vão para no reino dos cogumelos, governado pela Princesa Peach 
+                    (Anya Taylor-Joy), mas ameaçado pelo rei dos Koopas, Bowser (Jack Black), que vai fazer de tudo para 
+                    conseguir reinar todos os lugares. É então quando Luigi é raptado por Bowser e o usa para procurar Mario, 
+                    o único capaz de deter o Koopa e reestabelexcer a paz. Mario terá que aprender como viver nesse novo reino
+                    perigoso, passando por vários biomas, aprender a dirigir carros, utilizar itens que o fazem soltar bolas de 
+                    fogo das mãos, virar um animal e andar em plataformas nada confiáveis. Também estará acompanhados de amigos,
+                    como Toad (Keegan-Michael Key) e Donkey Kong (Seth Rogan).</p>
+                    <button class="btn__primary">COMPRAR INGRESSO</button>
+            </div>
+            
+            <img src="dist/images/tuboplanta.gif" alt="" class="gif">
+    
+        </section>
+    </div>
 
+    <section class="random">
+        <h2 class="title--big">QUAL PERSONAGEM DO FILME VOCÊ SERIA?</h2>
+        <div class="random__container">
+            <div class="random__container__description">
+                <h3 class="title" id="title">Vamos jogar?</h3>
+                <p class="text" id="text">Clique no botão abaixo e descubra quem você seria no universo de Super mario</p>
+                <button class="btn__primary" id="sortear">VER AGORA</button>
+            </div>
+            <div class="random__container__image">
+                <img src="dist/images/description-image (1).avif" id="imagem" alt="">
+            </div>
+        </div>
     </section>
 
+    <div class="sinopse">
+        <section class="trailer">
+            <h2 class="title--big">ASSISTA AO TRAILER</h2>
+            <div class="trailer__video">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/cDNkh5WybZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    
+        </section>
+    </div>
 
+    <footer>
+        <img src="dist/images/tumblr_mhjhy3zwVs1rrftcdo1_500.gif" alt="">
+        <p class="text">Game trademarks and copyrights are properties of their respective owners. Nintendo properties are trademarks of Nintendo. © 2020 Nintendo.</p>
+    </footer>
 
+    <div class="frame" id="frame">
+        <div class="frame__container" id="frameContainer">
+            <div class="frame__container__video">
+                <iframe autoplay="true" width="800" height="450" src="https://www.youtube.com/embed/cDNkh5WybZo?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="frame__container__close">
+                <i class="bi bi-x-lg" id="close"></i>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
     "></script>
+    <script src="src/main.js"></script>
 </body>
 
 </html>
